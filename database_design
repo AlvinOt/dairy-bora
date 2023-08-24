@@ -1,0 +1,83 @@
+Animals:
+Attributes:
+ID (Unique identifier)
+Name
+Breed
+Birth Date
+Gender
+Health Information
+Reproductive Status
+Milk Production Records (link to milk production records)
+
+Milk Production Records:
+Attributes:
+ID (Unique identifier)
+Cow ID (link to animal)
+Date of Production
+Amount of Milk Produced
+Notes
+
+
+Inventory:
+Attributes:
+ID (Unique identifier)
+Item Name
+Quantity
+Unit of Measurement
+Expiry Date (if applicable)
+Purchase Date
+Supplier Information
+Usage Tracking
+
+Users:
+Attributes:
+ID (Unique identifier)
+Username
+Password (hashed)
+Role (e.g., farmer, manager)
+Contact Information
+
+Animal Health Records:
+Attributes:
+ID (Unique identifier)
+Cow ID (link to animal)
+Date of Record
+Health Issue
+Medication Given
+Notes
+
+Reproductive Records:
+Attributes:
+ID (Unique identifier)
+Cow ID (link to animal)
+Date of Record
+Reproductive Event (e.g., heat detection, insemination, calving)
+Outcome (if applicable, e.g., pregnancy confirmed)
+
+Financial Records:
+Attributes:
+ID (Unique identifier)
+Transaction Date
+Transaction Type (e.g., purchase, sale)
+Amount
+Description
+Payment Method
+
+Reports:
+Attributes:
+ID (Unique identifier)
+Report Type (e.g., milk production summary, health status)
+Date Generated
+Content (data or analysis)
+User ID (link to the user who generated the report)
+
+Feed and Nutrition Records:
+
+Attributes:
+ID (Unique identifier)
+Cow ID (link to animal)
+Date of Record
+Feed Type
+Quantity Given
+Nutritional Information
+Feeding Schedule
