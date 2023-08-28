@@ -1,1 +1,15 @@
-config.py
+
+#ignore virtual environment
+dairyvenv/
+
+#ignore compiled python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore configuration-related files with sensitive data
+config/
+
+# Ignore database files
+*.db
