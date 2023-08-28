@@ -9,7 +9,8 @@ __pycache__/
 *.pyd
 
 # Ignore configuration-related files with sensitive data
-config/
+app/config/secrets.py
+app/config/database_config.py
 
 # Ignore database files
 *.db
