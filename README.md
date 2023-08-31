@@ -11,3 +11,5 @@ GRANT ALL PRIVILEGES ON database\_name.\* TO 'new\_user'@'localhost';
 GRANT ALL PRIVILEGES ON database\_name.\* TO 'new\_user'@'localhost';
  
 Run python app/db\_connector.py to establish a connection
+
+create instances of sql alchemy models
