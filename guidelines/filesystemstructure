@@ -1,25 +1,39 @@
-dairy-farm/
-|-- app/                    # Application code
-|   |-- static/              # Static assets (CSS, JS, images)
-|   |-- templates/           # HTML templates
-|   |-- routes.py             # Route definitions
-|   |-- models.py             # Database models
-|   |-- forms.py              # Form definitions
-|   |-- utils.py              # Utility functions
+Project Directory: dairy-farm/
+
+Inside dairy-farm/:
+|-- app/                         # Application source code
+|   |-- __init__.py              # Package initialization file
+|   |-- __pycache__/             # Cached Python files
+|   |-- db_connector.py          # First database connection script
+|   |-- routes.py                # Application routes (e.g., Flask routes)
+|   |-- static/                  # Static files (CSS, images, etc.)
+|   |-- templates/               # HTML templates for rendering
+|   |
+|   |-- config/                  # Configuration files
+|   |   |-- __init__.py          # Package initialization file
+|   |   |-- __pycache__/         # Cached Python files
+|   |   |-- database_config.py   # Database configuration settings
+|   |   |-- db_config_template.py# Template for database configuration
 |
-|-- config/                  # Configuration files
-|   |-- config.py             # Application configuration
-|   |-- secrets.py            # Store sensitive information (not in version control)
+|-- migrations/                  # Database migrations (if using a database ORM)
 |
-|-- migrations/              # Database migrations (if using a database ORM)
+|-- tests/                       # Test files
+|   |-- test_routes.py           # Test cases for application routes
+|   |-- test_models.py           # Test cases for models and database operations
 |
-|-- tests/                   # Test files
-|   |-- test_routes.py        # Tests for routes
-|   |-- test_models.py        # Tests for models
+|-- dairyvvenv/                   # Virtual environment directory (Python venv)
 |
-|-- venv/                    # Virtual environment (if using Python venv)
+|-- .gitignore                   # List of files and directories to ignore in version control
+|-- README.md                   # Project documentation and description
+|-- requirements.txt            # List of required Python packages (dependencies)
+|-- manage.py                   # Script to manage the application (e.g., run, migrate)
+
+# New Files and Directories:
+
+|-- database/                    # Database operations and models
+|   |-- __init__.py              # Package initialization file
+|   |-- models.py                # SQLAlchemy models for the application
+|   |-- database.py              # Database operations and session management
 |
-|-- .gitignore               # List of files and directories to ignore in version control
-|-- README.md               # Project documentation
-|-- requirements.txt        # List of required Python packages
-|-- manage.py               # Script to manage the application (e.g., run, migrate)
+|-- scripts/                     # Application scripts
+|   |-- main.py                  # Script to interact with models and database operations
