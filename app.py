@@ -201,7 +201,7 @@ def update_animal(animal_id):
         return jsonify({"error": str(e)}), 500
 
 @app.route('/change_password', methods=['POST'])
-def change_password():
+def change_password_using_hashed():
     # Get user data from the request
     data = request.json
 
@@ -236,6 +236,75 @@ def change_password():
         else:
             session.close()
             return jsonify({"error": "Incorrect current password."}), 401
+
+    except Exception as e:
+        # Handle exceptions (e.g., database errors)
+        session.rollback()
+        session.close()
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/change_password_using_hashed', methods=['POST'])
+def change_password():
+    # Get user data from the request
+    data = request.json
+
+    # Extract user information
+    username = data['username']
+    current_password_hashed = data['current_password_hashed']
+    new_password_plain = data['new_password_plain']  # New password in plain text
+
+    # Create a session
+    session = Session()
+
+    try:
+        # Query the user by username
+        user = session.query(User).filter_by(username=username).first()
+
+        if user is None:
+            return jsonify({"error": "User not found."}), 404
+
+        # Check if the current password is correct (assuming current_password_hashed is already hashed)
+        if current_password_hashed == user.password_hashed:
+            # Hash the new plain text password
+            hashed_password = bcrypt.hashpw(new_password_plain.encode('utf-8'), bcrypt.gensalt())
+
+            # Update the user's password
+            user.password_hashed = hashed_password
+
+            # Commit the changes to the database
+            session.commit()
+            session.close()
+
+            return jsonify({"message": "Password changed successfully."}), 200
+        else:
+            session.close()
+            return jsonify({"error": "Incorrect current password."}), 401
+
+    except Exception as e:
+        # Handle exceptions (e.g., database errors)
+        session.rollback()
+        session.close()
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/delete_user/<int:user_id>', methods=['DELETE'])
+def delete_user(user_id):
+    # Create a session
+    session = Session()
+
+    try:
+        # Query the user by user ID
+        user = session.query(User).filter_by(id=user_id).first()
+
+        if user is None:
+            return jsonify({"error": "User not found."}), 404
+
+        # Delete the user
+        session.delete(user)
+        session.commit()
+        session.close()
+
+        return jsonify({"message": "User deleted successfully."}), 200
 
     except Exception as e:
         # Handle exceptions (e.g., database errors)
