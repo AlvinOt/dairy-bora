@@ -2,8 +2,8 @@ import sys
 import os
 
 # Add the project root directory to the Python path
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, project_root)
+"""project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)"""
 
 from sqlalchemy.orm import sessionmaker
 from database.database import engine, Session
@@ -15,7 +15,7 @@ session = SessionLocal()
 
 def main():
     # Create a new animal
-    new_animal = Animal(name='Rembo', breed='Fresian', birth_date='2020-01-15', gender='Female')
+    new_animal = Animal(name='mercy', breed='guernsey', birth_date='2021-02-13', gender='Female')
     session.add(new_animal)
     session.commit()
 
