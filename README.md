@@ -12,6 +12,8 @@ GRANT ALL PRIVILEGES ON database\_name.\* TO 'new\_user'@'localhost';
  
 Run python app/db\_connector.py to establish a connection
 
+create sqlalchemy models
+
 create instances of sql alchemy models
 
 run scripts/main\*.py files to create instances of animals, milk production records and users

@@ -1,0 +1,17 @@
+the following technology stack have been implemented or used in the development process:
+
+Python: The core programming language used for developing the backend of the Dairy Farm Management System.
+
+Flask: A micro web framework for Python used for building web APIs and handling HTTP requests.
+
+SQLAlchemy: A Python SQL toolkit and Object-Relational Mapping (ORM) library used for database operations.
+
+MySQL: A popular open-source relational database management system used to store and manage data.
+
+curl: A command-line tool for making HTTP requests, which you've used for testing your API endpoints.
+
+Vagrant: A tool for managing development environments, allowing one to create a consistent and isolated environment for your project.
+
+Virtual Environment (venv): Used to create isolated Python environments for your project, ensuring dependencies are separate from the system-wide Python installation.
+
+Git: Using version control with Git for tracking changes to the codebase.
