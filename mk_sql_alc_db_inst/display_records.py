@@ -1,6 +1,13 @@
+import sys
+import os
+
+# Add the project directory to sys.path
+project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(project_dir)
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database.models import Animal, MilkProductionRecord
+from database_dir.models import Animal, MilkProductionRecord
 
 # Create a database connection
 engine = create_engine('mysql+mysqlconnector://farmanager:manage123@localhost/farmgt')

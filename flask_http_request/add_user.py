@@ -10,10 +10,10 @@ hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
 # User data to be sent in JSON format
 user_data = {
-    'username': 'nivla',
+    'username': 'cassim',
     'password_hashed': hashed_password,  # Use the hashed password
-    'role': 'OTCmraf',
-    'contact_information': 'nivlawillseeyousooon.com'
+    'role': 'Farm Ownwer',
+    'contact_information': 'cassim.com'
 }
 
 # Send a POST request to create the user

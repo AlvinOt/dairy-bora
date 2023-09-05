@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -X POST -H "Content-Type: application/json" -d '{
-    "name": "Jacinta",
+    "name": "Salome",
     "breed": "Holstein",
     "birth_date": "2019-01-01",
     "gender": "Female"
