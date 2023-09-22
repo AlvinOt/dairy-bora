@@ -1,0 +1,30 @@
+Allowing certain operations without requiring users to log in is a common practice and can enhance the user experience. Here are some operations that users can typically do without logging in:
+
+1. **Viewing Public Information:** Users should be able to access public information, such as:
+
+   - General information about the dairy farm.
+   - Publicly available statistics, trends, or reports related to the dairy industry.
+   - Information about the farm's products and services.
+
+2. **Browsing Animals and Milk Production Records:** Users can view details about animals and milk production records without the need to log in. This includes information such as:
+
+   - Animal names, breeds, and birth dates.
+   - Historical milk production data (e.g., daily, monthly, or yearly averages).
+
+3. **Contacting Support:** Provide a "Contact Us" or "Support" section where users can send inquiries, feedback, or support requests without requiring an account.
+
+4. **FAQs and Knowledge Base:** Offer a Frequently Asked Questions (FAQs) section or a knowledge base that provides answers to common queries and concerns.
+
+5. **News and Announcements:** Share updates, news, and announcements related to the dairy farm or the industry. Users can access this information without logging in.
+
+6. **Product Catalog:** If you offer dairy products for sale, users should be able to browse your product catalog, view product details, and check pricing without logging in.
+
+7. **Locating the Farm:** Include a "Location" or "Find Us" feature that allows users to see the farm's address, location on a map, and contact details without needing an account.
+
+8. **Social Media Links:** Provide links to your dairy farm's social media profiles for users who want to follow updates and news without registering.
+
+9. **Newsletter Subscription:** Allow users to subscribe to newsletters or updates by providing their email address. This can be an optional feature for staying informed about the farm's activities.
+
+10. **Site Search:** Implement a search functionality that enables users to find specific information or products on your website easily.
+
+By offering these features without requiring user authentication, you can make your Dairy Farm Management System more user-friendly and accessible. However, it's important to strike a balance between providing open access and protecting sensitive data. Any action that involves submitting data or performing transactions, especially those that affect the database, should typically require user authentication to ensure data integrity and security.

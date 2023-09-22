@@ -1,0 +1,31 @@
+my_dairy_app/
+│
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── utils/
+│   │   ├── db_config.py
+│   │   └── init_db.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── animals.py
+│   │   ├── users.py
+│   │   ├── milk_records.py
+│   │   └── ...
+│   └── static/
+│       └── ...
+│
+├── config/
+│   └── database_config.py
+│
+├── scripts/
+│   ├── utils/
+│   │   ├── add_user.py
+│   │   └── ...
+│   └── ...
+│
+├── venv/  # (Virtual environment directory)
+│
+├── requirements.txt
+├── run.py
+└── ...

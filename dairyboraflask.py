@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database_dir.models import Animal, MilkProductionRecord, User
+from app.models import Animal, MilkProductionRecord, User
 import bcrypt
 
 app = Flask(__name__)

@@ -1,5 +1,5 @@
 from sqlalchemy.orm import sessionmaker
-from database_dir.models import Animal
+from app.models import Animal
 from sqlalchemy import create_engine
 
 # Define your database connection URL

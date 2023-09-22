@@ -1,7 +1,7 @@
 # Import necessary modules
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import Base
+from app.models import Base
 
 # Define database connection URL
 DB_URL = 'mysql+mysqlconnector://farmanager:manage123@localhost/farmgt'
