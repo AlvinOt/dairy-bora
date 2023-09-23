@@ -6,6 +6,12 @@
 
 Dairy Bora is not just another software project; it's a journey that began with a vision to revolutionize dairy farm management. This project was inspired by the challenges faced by dairy farmers in efficiently managing their farms, recording vital data, and ensuring the well-being of their livestock.
 
+**Project Link**: [Dairy Bora on GitHub](https://github.com/AlvinOt/dairy-bora)
+
+**Author**: [Your Name](https://github.com/alvinot)
+
+**Final Project Blog Article**: [Read the Blog Post](https://medium.com/@otienoalvinowiti97/dairy-bora-portfolio-project-blog-post-70fcfdcf2c48)
+
 ## Motivation
 
 The motivation behind Dairy Bora is deeply rooted in the desire to support the agricultural industry. We envisioned a tool that would empower farmers to streamline their operations, make data-driven decisions, and ultimately enhance their productivity.
@@ -42,11 +48,39 @@ Dairy Bora is just the beginning. We have plans to enhance this platform with mo
 
 - **Mobile App**: Develop a mobile companion app for convenient on-the-go management.
 
-- **Integration**: Explore integration with IoT devices and sensors to automate data collection.
-
 ## Getting Started
 
 To get started with Dairy Bora, follow the installation instructions in our [Installation Guide](https://github.com/AlvinOt/dairy-bora/blob/master/README.md).
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/AlvinOt/dairy-bora.git
+```
+
+2. Change to the project directory:
+
+```
+cd dairy-bora
+```
+
+3. Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+4. Run the application:
+
+```
+python run.py
+```
+
+## Usage
+
+After installing the application, open your web browser and navigate to `http://localhost:5000` to access Dairy Bora.
 
 ## Screenshots
 
@@ -56,11 +90,19 @@ To get started with Dairy Bora, follow the installation instructions in our [Ins
 
 ## Contributions
 
-Contributions are welcome! If you'd like to contribute to Dairy Bora, please review our [Contribution Guidelines](https://github.com/AlvinOt/dairy-bora/blob/master/README.md).
+Contributions are welcome! If you'd like to contribute to Dairy Bora, please review our [Contribution Guidelines](https://github.com/AlvinOt/dairy-bora/blob/master/CONTRIBUTING.md).
+
+## Related Projects
+
+- [Farm Sensors](link-to-farm-sensors-project): A companion project that integrates IoT sensors with Dairy Bora.
+
+## Licensing
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/AlvinOt/dairy-bora/blob/master/LICENSE) file for details.
 
 ## Contact Us
 
-Feel free to reach out to us at [email@example.com](https://github.com/alvinot) if you have any questions or suggestions.
+Feel free to reach out to us at [email@example.com](mailto:email@example.com) if you have any questions or suggestions.
 
 Thank you for being a part of our journey in transforming dairy farm management.
 
