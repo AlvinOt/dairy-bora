@@ -1,23 +1,67 @@
-A software solution for efficiently managing all aspects of dairy farming operations such as animal information, milk production tracking, inventory management and financial records.
+# Dairy Bora: Dairy Farm Management System
 
-mysql -u username -p
+![Dairy Bora Logo](https://github.com/AlvinOt/dairy-bora/blob/master/docs/images/cow_icon.jpg)
 
-CREATE DATABASE database\_name;
+## Introduction
 
-CREATE USER 'username'@'localhost' IDENTIFIED BY 'P@ssw0rd!2023';
+Dairy Bora is not just another software project; it's a journey that began with a vision to revolutionize dairy farm management. This project was inspired by the challenges faced by dairy farmers in efficiently managing their farms, recording vital data, and ensuring the well-being of their livestock.
 
-GRANT ALL PRIVILEGES ON database\_name.\* TO 'new\_user'@'localhost';
+## Motivation
 
-GRANT ALL PRIVILEGES ON database\_name.\* TO 'new\_user'@'localhost';
- 
-Run python app/db\_connector.py to establish a connection
+The motivation behind Dairy Bora is deeply rooted in the desire to support the agricultural industry. We envisioned a tool that would empower farmers to streamline their operations, make data-driven decisions, and ultimately enhance their productivity.
 
-create sqlalchemy models
+## The Technical Challenge
 
-create instances of sql alchemy models
+One of the key technical challenges we set out to solve was building a robust and user-friendly web application that seamlessly integrates with a MySQL database. We aimed to create a system that enables farmers to record and manage critical information about their animals, milk production, and finances, all while maintaining a secure and user-friendly interface.
 
-run scripts/main\*.py files to create instances of animals, milk production records and users
+## Struggles and Learnings
 
-perform crud operations to flask api endpoints
+- **Database Design**: Designing an efficient database schema that accommodates the complexity of dairy farm data was a significant challenge. We iterated on our data models to strike the right balance between flexibility and performance.
 
-MORE COMING SOON
+- **Security**: Implementing security measures, such as password hashing and access control, was a priority. Learning how to protect user data and the system from potential threats was a valuable lesson.
+
+- **Flask Web Framework**: Learning and working with Flask, a micro web framework, was both challenging and rewarding. We faced hurdles while building routes, handling user authentication, and implementing role-based access control.
+
+## Features
+
+- **Animal Management**: Easily add, update, and view information about animals, including their breed, birth date, and health status.
+
+- **Milk Production Recording**: Record daily milk production data, helping farmers monitor the performance of their cows.
+
+- **User Authentication**: Secure user authentication ensures that only authorized individuals can access and manage farm data.
+
+- **Role-Based Access Control**: Differentiate between farm owners, employees, and veterinarians with role-based access control.
+
+- **Financial Records**: Keep track of financial transactions and expenses related to the farm.
+
+## Next Steps
+
+Dairy Bora is just the beginning. We have plans to enhance this platform with more features and improvements, including:
+
+- **Reports and Analytics**: Generate insightful reports and analytics to assist farmers in making informed decisions.
+
+- **Mobile App**: Develop a mobile companion app for convenient on-the-go management.
+
+- **Integration**: Explore integration with IoT devices and sensors to automate data collection.
+
+## Getting Started
+
+To get started with Dairy Bora, follow the installation instructions in our [Installation Guide](https://github.com/AlvinOt/dairy-bora/blob/master/README.md).
+
+## Screenshots
+
+![Screenshot 1](link-to-screenshot-1.png)
+
+![Screenshot 2](link-to-screenshot-2.png)
+
+## Contributions
+
+Contributions are welcome! If you'd like to contribute to Dairy Bora, please review our [Contribution Guidelines](https://github.com/AlvinOt/dairy-bora/blob/master/README.md).
+
+## Contact Us
+
+Feel free to reach out to us at [email@example.com](https://github.com/alvinot) if you have any questions or suggestions.
+
+Thank you for being a part of our journey in transforming dairy farm management.
+
+🐄 Happy Farming! 🐄
