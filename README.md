@@ -84,7 +84,7 @@ After installing the application, open your web browser and navigate to `http://
 
 ## Screenshots
 
-![Screenshot 1](link-to-screenshot-1.png)
+![app_two](https://github.com/AlvinOt/dairy-bora/assets/113702981/aecc74c6-f604-4911-8374-815aa0075c80)
 
 ![Screenshot 2](link-to-screenshot-2.png)
 
